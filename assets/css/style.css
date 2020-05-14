@@ -305,7 +305,7 @@
     float: left;
 }
 
-.noticiaare2 {
+.noticiaarea2 {
     width: 320px;
     height: 420px;
     float: left;
@@ -387,7 +387,7 @@
     }
 }
 
-@media only screen and (max-width:906px) {
+@media only screen and (min-width:783px) (max-width:906px) and {
     .topoint,
     .topo2int,
     .menuint,
@@ -395,20 +395,94 @@
     .containerint {
         max-width: 890px;
     }
+    .topo2 .banner {
+        display: none;
+    }
+    .logo {
+        float: none;
+        margin: auto;
+    }
+    .rightside {
+        display: none;
+    }
     .leftside {
-        width: 600px;
+        width: auto;
+        float: none;
     }
     .noticiaarea1 {
-        width: 278px;
+        width: 446px;
     }
     .noticiabig .noticiaimg {
-        width: 245px;
+        width: 415px;
     }
     .noticiabig .noticiaimg img {
-        width: 245px;
+        width: 415px;
     }
     .noticiabig .noticiatitulo {
-        width: 245px;
+        width: 415px;
         font-size: 25px;
+    }
+}
+
+@media only screen and (max-width:783px) {
+    .topoint,
+    .topo2int,
+    .menuint,
+    .ultimanoticiasint,
+    .containerint {
+        max-width: 320px;
+    }
+    .topoleft {
+        display: none;
+    }
+    .toporight {
+        width: 100%;
+    }
+    .topo2 .banner {
+        display: none;
+    }
+    .logo {
+        float: none;
+        margin: auto;
+    }
+    .menuint {
+        display: none;
+    }
+    .ultimasnoticias {
+        display: none;
+    }
+    .rightside {
+        display: none;
+    }
+    .leftside {
+        width: auto;
+        float: none;
+        margin-top: 10px;
+    }
+    .noticiaarea1 {
+        width: 320px;
+    }
+    .noticiabig .noticiaimg {
+        width: 290px;
+    }
+    .noticiabig .noticiaimg img {
+        width: 290px;
+    }
+    .noticiabig .noticiatitulo {
+        width: 290px;
+        font-size: 25px;
+    }
+    .noticiaarea2 {
+        width: 300px;
+        margin-top: auto;
+        float: none;
+        clear: both;
+        padding-top: 20px;
+    }
+    .noticiatitulo {
+        width: 206px;
+    }
+    .noticiainfo {
+        width: 206px;
     }
 }
